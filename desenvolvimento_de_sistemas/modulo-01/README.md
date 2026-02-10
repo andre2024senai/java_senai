@@ -22,7 +22,7 @@ public class EntradaDados {
     }
 }
 
-2️⃣ Tipos primitivos + Scanner (um por um)
+##2️⃣ Tipos primitivos + Scanner (um por um)
 🔹 byte – inteiro pequeno
 
 📌 Intervalo: -128 a 127
