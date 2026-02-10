@@ -5,6 +5,7 @@ Nesta aula vamos aprender a capturar dados que o usuário digita no teclado util
 ---
 
 ## 1️⃣ Configurando o Scanner
+
 Todo programa com entrada de dados precisa importar a ferramenta no início do arquivo:
 
 ```java
