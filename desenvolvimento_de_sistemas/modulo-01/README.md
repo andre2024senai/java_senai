@@ -22,15 +22,10 @@ public class EntradaDados {
     }
 }
 
----
-
-## 2️⃣ Tipos primitivos + Scanner (um por um)
+## 2️⃣ Tipos primitivos + Scanner
 🔹 byte – inteiro pequeno
 
 📌 Intervalo: -128 a 127
-```java
+
 System.out.print("Digite um valor byte: ");
 byte valorByte = teclado.nextByte();
-
-
-🧠 Exemplo prático: idade pequena, nível, quantidade limitada.
