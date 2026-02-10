@@ -21,6 +21,7 @@ public class EntradaDados {
         teclado.close();
     }
 }
+---
 
 ##2️⃣ Tipos primitivos + Scanner (um por um)
 🔹 byte – inteiro pequeno
