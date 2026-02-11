@@ -4,7 +4,7 @@ Este material apresenta o uso da classe `Scanner` para entrada de dados em Java,
 
 ---
 
-## 1️⃣ Importando e criando o Scanner
+## Importando e criando o Scanner
 
 Todo programa Java que utiliza entrada de dados pelo teclado começa com a importação da classe `Scanner`.
 
