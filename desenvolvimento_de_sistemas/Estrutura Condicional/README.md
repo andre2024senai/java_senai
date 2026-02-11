@@ -4,7 +4,21 @@ Nesta aula, aprendemos como ensinar o computador a tomar decisões. O código de
 
 ---
 
-## 1️⃣ A Estrutura Básica
+### Operadores de Comparação (Relacionais)
+
+Para criar a "pergunta" dentro do `if`, usamos estes símbolos:
+
+| Símbolo | Significado | Exemplo (`x = 10`) |
+| :---: | :--- | :--- |
+| `>` | Maior que | `x > 5` (Verdadeiro) |
+| `<` | Menor que | `x < 5` (Falso) |
+| `>=` | Maior ou igual a | `x >= 10` (Verdadeiro) |
+| `<=` | Menor ou igual a | `x <= 9` (Falso) |
+| `==` | Igual a | `x == 10` (Verdadeiro) |
+| `!=` | Diferente de | `x != 10` (Falso) |
+
+
+## A Estrutura
 
 Imagine uma encruzilhada. O computador verifica uma **condição** (uma pergunta de Sim ou Não).
 * Se for Verdadeira (`true`), ele entra no bloco.
@@ -18,3 +32,5 @@ if (condicao) {
 } else {
     // Executa se NENHUMA das anteriores for verdadeira
 }
+
+
