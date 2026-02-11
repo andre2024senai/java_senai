@@ -1,22 +1,23 @@
-# Aula 01 - Entrada de Dados com Scanner
+# Entrada de Dados em Java com Scanner
 
-Nesta aula vamos aprender a capturar dados que o usuário digita no teclado utilizando a classe `Scanner`.
+Este material apresenta o uso da classe `Scanner` para entrada de dados em Java, abordando os principais **tipos primitivos** utilizados no dia a dia da programação.
 
 ---
 
-## 1️⃣ Configurando o Scanner
+## 1️⃣ Importando e criando o Scanner
 
-Todo programa com entrada de dados precisa importar a ferramenta no início do arquivo:
+Todo programa Java que utiliza entrada de dados pelo teclado começa com a importação da classe `Scanner`.
 
 ```java
 import java.util.Scanner;
 
-public class Exemplo {
+public class EntradaDados {
     public static void main(String[] args) {
+
         Scanner teclado = new Scanner(System.in);
-        
-        // Seus comandos de leitura aqui...
-        
-        teclado.close(); // Sempre feche o scanner no final!
+
+        // entradas aqui
+
+        teclado.close();
     }
 }
