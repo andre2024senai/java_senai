@@ -1,10 +1,10 @@
-# 🔁 Estruturas de Repetição em Java
+#  Estruturas de Repetição em Java
 
 Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe `Scanner` para entrada de dados pelo usuário.
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Demonstrar o uso das estruturas:
 
@@ -51,10 +51,6 @@ public class ExemploWhile {
         leitor.close();
     }
 }
-
-
-
-
 ##  For
 
 ###  Quando usar?
@@ -85,8 +81,6 @@ public class ExemploFor {
         entrada.close();
     }
 }
-
-
 
 
 ##  Do While
