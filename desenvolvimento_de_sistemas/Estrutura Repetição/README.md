@@ -1,4 +1,4 @@
-#  Estruturas de Repetição em Java
+#  Estruturas de Repetição
 
 Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe `Scanner` para entrada de dados pelo usuário.
 
