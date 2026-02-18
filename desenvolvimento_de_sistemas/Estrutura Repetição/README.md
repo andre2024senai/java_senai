@@ -1,44 +1,32 @@
 # Estruturas de Repetição em Java
 
-## Exemplo While
+Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe `Scanner` para entrada de dados pelo usuário.
 
-```java
-while (numero != 0) {
-    soma += numero;
-}
+## 🎯 Objetivo
 
-Estruturas de Repetição em Java
-
-Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe Scanner para entrada de dados pelo usuário.
-
-🎯 Objetivo
-
-Demonstrar o uso das estruturas:
-
-while
-
-for
-
-do while
+Demonstrar o uso das seguintes estruturas:
+* **while**
+* **for**
+* **do while**
 
 Cada exemplo contém:
+1.  Entrada de dados
+2.  Estrutura de repetição
+3.  Aplicação prática
+4.  Boas práticas (como fechamento do Scanner)
 
-Entrada de dados
+---
 
-Estrutura de repetição
+## 🔁 1. While
 
-Aplicação prática
+### 📌 Quando usar?
+Utilizamos `while` quando **não sabemos** quantas vezes a repetição irá acontecer. A condição é testada **antes** de executar o bloco.
 
-Boas práticas (como fechamento do Scanner)
 
-🔁 1️⃣ While
-📌 Quando usar?
 
-Utilizamos while quando não sabemos quantas vezes a repetição irá acontecer.
+### 🧠 Exemplo: Somar números até o usuário digitar 0
 
-A condição é testada antes de executar o bloco.
-
-🧠 Exemplo: Somar números até o usuário digitar 0
+```java
 import java.util.Scanner;
 
 public class ExemploWhile {
@@ -54,7 +42,6 @@ public class ExemploWhile {
         valorDigitado = leitor.nextInt();
 
         while (valorDigitado != 0) {
-
             acumulador += valorDigitado;
 
             System.out.print("Digite outro número (0 para sair): ");
@@ -64,77 +51,5 @@ public class ExemploWhile {
         System.out.println("Soma total: " + acumulador);
 
         leitor.close();
-    }
-}
-
-🔁 2️⃣ For
-📌 Quando usar?
-
-Utilizamos for quando sabemos exatamente quantas vezes a repetição deve acontecer.
-
-Possui três partes importantes:
-
-Inicialização
-
-Condição
-
-Incremento
-
-🧠 Exemplo: Tabuada de um número
-import java.util.Scanner;
-
-public class ExemploFor {
-
-    public static void main(String[] args) {
-
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.print("Digite um número para ver a tabuada: ");
-        int numeroBase = entrada.nextInt();
-
-        for (int contador = 1; contador <= 10; contador++) {
-
-            int resultadoMultiplicacao = numeroBase * contador;
-
-            System.out.println(numeroBase + " x " + contador + " = " + resultadoMultiplicacao);
-        }
-
-        entrada.close();
-    }
-}
-
-🔁 3️⃣ Do While
-📌 Quando usar?
-
-Utilizamos do while quando o bloco precisa ser executado pelo menos uma vez, independentemente da condição.
-
-A condição é testada após a execução do bloco.
-
-🧠 Exemplo: Validação de senha
-import java.util.Scanner;
-
-public class ExemploDoWhile {
-
-    public static void main(String[] args) {
-
-        Scanner teclado = new Scanner(System.in);
-
-        int senhaCorreta = 1234;
-        int senhaInformada;
-
-        do {
-
-            System.out.print("Digite a senha: ");
-            senhaInformada = teclado.nextInt();
-
-            if (senhaInformada != senhaCorreta) {
-                System.out.println("Senha incorreta! Tente novamente.");
-            }
-
-        } while (senhaInformada != senhaCorreta);
-
-        System.out.println("Acesso liberado!");
-
-        teclado.close();
     }
 }
