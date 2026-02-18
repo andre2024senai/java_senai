@@ -1,10 +1,10 @@
-# 🔁 Estruturas de Repetição em Java
+#  Estruturas de Repetição em Java
 
 Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe `Scanner` para entrada de dados pelo usuário.
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Demonstrar o uso das estruturas:
 
@@ -21,14 +21,14 @@ Cada exemplo contém:
 
 ---
 
-## 🔁 1️⃣ While
+##   While
 
-### 📌 Quando usar?
+###  Quando usar?
 
 Utilizamos `while` quando **não sabemos quantas vezes** a repetição irá acontecer.
 A condição é testada **antes** de executar o bloco.
 
-### 🧠 Exemplo: Somar números até o usuário digitar 0
+###  Exemplo: Somar números até o usuário digitar 0
 ```java
 import java.util.Scanner;
 
@@ -53,9 +53,7 @@ public class ExemploWhile {
 }
 ```
 
----
-
-## 🔁 2️⃣ For
+##  For
 
 ### 📌 Quando usar?
 
@@ -66,7 +64,7 @@ Possui três partes importantes:
 - Condição
 - Incremento
 
-### 🧠 Exemplo: Tabuada de um número
+### Exemplo: Tabuada de um número
 ```java
 import java.util.Scanner;
 
