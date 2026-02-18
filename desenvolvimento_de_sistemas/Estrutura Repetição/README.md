@@ -55,7 +55,7 @@ public class ExemploWhile {
 
 ##  For
 
-### 📌 Quando usar?
+###  Quando usar?
 
 Utilizamos `for` quando **sabemos exatamente quantas vezes** a repetição deve acontecer.
 Possui três partes importantes:
@@ -87,14 +87,14 @@ public class ExemploFor {
 
 ---
 
-## 🔁 3️⃣ Do While
+##  Do While
 
-### 📌 Quando usar?
+###  Quando usar?
 
 Utilizamos `do while` quando o bloco precisa ser **executado pelo menos uma vez**, independentemente da condição.
 A condição é testada **após** a execução do bloco.
 
-### 🧠 Exemplo: Validação de senha
+###  Exemplo: Validação de senha
 ```java
 import java.util.Scanner;
 
