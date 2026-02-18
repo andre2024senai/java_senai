@@ -1,10 +1,10 @@
-#  Estruturas de Repetição em Java
+# 🔁 Estruturas de Repetição em Java
 
 Repositório com exemplos práticos das principais estruturas de repetição em Java, utilizando a classe `Scanner` para entrada de dados pelo usuário.
 
 ---
 
-##  Objetivo
+## 🎯 Objetivo
 
 Demonstrar o uso das estruturas:
 
@@ -19,16 +19,16 @@ Cada exemplo contém:
 - Aplicação prática
 - Boas práticas (como fechamento do `Scanner`)
 
+---
 
+## 🔁 1️⃣ While
 
-##  1️ While
-
-###  Quando usar?
+### 📌 Quando usar?
 
 Utilizamos `while` quando **não sabemos quantas vezes** a repetição irá acontecer.
 A condição é testada **antes** de executar o bloco.
 
-###  Exemplo: Somar números até o usuário digitar 0
+### 🧠 Exemplo: Somar números até o usuário digitar 0
 ```java
 import java.util.Scanner;
 
@@ -51,9 +51,13 @@ public class ExemploWhile {
         leitor.close();
     }
 }
-##  For
+```
 
-###  Quando usar?
+---
+
+## 🔁 2️⃣ For
+
+### 📌 Quando usar?
 
 Utilizamos `for` quando **sabemos exatamente quantas vezes** a repetição deve acontecer.
 Possui três partes importantes:
@@ -62,7 +66,7 @@ Possui três partes importantes:
 - Condição
 - Incremento
 
-###  Exemplo: Tabuada de um número
+### 🧠 Exemplo: Tabuada de um número
 ```java
 import java.util.Scanner;
 
@@ -81,16 +85,18 @@ public class ExemploFor {
         entrada.close();
     }
 }
+```
 
+---
 
-##  Do While
+## 🔁 3️⃣ Do While
 
-###  Quando usar?
+### 📌 Quando usar?
 
 Utilizamos `do while` quando o bloco precisa ser **executado pelo menos uma vez**, independentemente da condição.
 A condição é testada **após** a execução do bloco.
 
-###  Exemplo: Validação de senha
+### 🧠 Exemplo: Validação de senha
 ```java
 import java.util.Scanner;
 
@@ -113,4 +119,4 @@ public class ExemploDoWhile {
         teclado.close();
     }
 }
-
+```
