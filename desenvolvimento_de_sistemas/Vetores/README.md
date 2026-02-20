@@ -139,7 +139,7 @@ for (int i = 0; i < matriz.length; i++) {
 #### matriz[i].length → número de colunas
 ---
 
-### 7. Soma dos Elementos da Matriz
+## 7. Soma dos Elementos da Matriz
 ```java
 int somaMatriz = 0;
 
