@@ -1,4 +1,4 @@
-# 📌 Exemplo Completo de Vetores em Java
+# Exemplo Completo de Vetores em Java
 
 Este projeto demonstra os principais conceitos de **vetores (arrays) em Java**, incluindo:
 
@@ -12,9 +12,9 @@ Este projeto demonstra os principais conceitos de **vetores (arrays) em Java**, 
 
 ---
 
-## 🔹 1. Vetor Unidimensional (Array 1D)
+## 1. Vetor Unidimensional (Array 1D)
 
-### ✔ Declaração e Inicialização
+### Declaração e Inicialização
 
 ```java
 int[] numeros = {40, 15, 70, 5, 30, 90, 25};
