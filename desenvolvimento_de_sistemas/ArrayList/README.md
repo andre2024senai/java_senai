@@ -1,8 +1,8 @@
-# 📚 ArrayList em Java
+#  ArrayList em Java
 
 > Guia completo sobre ArrayList - Estrutura de dados dinâmica essencial em Java
 
-## 📋 Índice
+##  Índice
 
 - [O que é ArrayList?](#o-que-é-arraylist)
 - [Por que usar ArrayList?](#por-que-usar-arraylist)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🎯 O que é ArrayList?
+##  O que é ArrayList?
 
 **ArrayList** é uma classe da biblioteca `java.util` que implementa uma **lista dinâmica** (resizable array). Diferente de arrays tradicionais que têm tamanho fixo, o ArrayList pode crescer e diminuir automaticamente conforme necessário.
 
@@ -64,7 +64,7 @@ frutas.add("Morango");  //  Continua crescendo!
 
 ---
 
-## 🚀 Declaração e Inicialização
+##  Declaração e Inicialização
 
 ### Sintaxe básica:
 
@@ -116,7 +116,7 @@ ArrayList<String> coresMutavel = new ArrayList<>(List.of("Vermelho", "Verde", "A
 
 ---
 
-## 🔧 Métodos Principais
+##  Métodos Principais
 
 ###  Adicionar elementos
 
@@ -262,7 +262,7 @@ nomes.forEach(System.out::println);
 
 ---
 
-## ⚖️ Array vs ArrayList
+##  Array vs ArrayList
 
 | Característica | Array | ArrayList |
 |----------------|-------|-----------|
@@ -345,7 +345,7 @@ public class ListaTarefas {
                     int num = sc.nextInt();
                     if (num > 0 && num <= tarefas.size()) {
                         tarefas.remove(num - 1);
-                        System.out.println("✅ Tarefa removida!");
+                        System.out.println(" Tarefa removida!");
                     }
                     break;
                     
@@ -482,7 +482,7 @@ ArrayList<String> lista = new ArrayList<>(1000);
 //  Evite
 if (lista.size() == 0) { }
 
-// ✅ Melhor
+//  Melhor
 if (lista.isEmpty()) { }
 ```
 
@@ -524,15 +524,11 @@ if (lista1.equals(lista2)) { }  // true
 
 ---
 
-## 📚 Recursos Adicionais
+##  Recursos Adicionais
 
 ### Documentação oficial:
 - [ArrayList - Java Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)
 - [Collections Framework](https://docs.oracle.com/javase/tutorial/collections/)
-
-### Tutoriais recomendados:
-- [W3Schools - Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
-- [GeeksforGeeks - ArrayList in Java](https://www.geeksforgeeks.org/arraylist-in-java/)
 
 ### Diferenças entre estruturas:
 - **ArrayList** vs **LinkedList**: ArrayList é melhor para acesso aleatório; LinkedList para inserções/remoções frequentes
