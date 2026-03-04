@@ -13,7 +13,6 @@ Guia completo sobre os fundamentos da POO: Encapsulamento, Herança, Polimorfism
 - [4️ Abstração](#4️-abstração)
 - [Comparação Entre os Pilares](#comparação-entre-os-pilares)
 - [Exemplo Completo Integrando Todos os Pilares](#exemplo-completo-integrando-todos-os-pilares)
-- [Exercícios Práticos](#exercícios-práticos)
 
 ---
 
@@ -1811,48 +1810,6 @@ public class Main {
     }
 }
 ```
-
----
-
-## Exercícios Práticos
-
-### Nível Básico
-
-1. **Encapsulamento**: Crie uma classe `Produto` com atributos privados (nome, preço, estoque) e métodos para adicionar/remover estoque com validação.
-
-2. **Herança**: Crie uma hierarquia `Pessoa` → `Aluno` / `Professor` com atributos e métodos específicos para cada tipo.
-
-3. **Polimorfismo**: Crie uma classe `Animal` com método `emitirSom()` e implemente em `Cachorro`, `Gato`, `Vaca` com sons diferentes.
-
-4. **Abstração**: Crie uma classe abstrata `FormaGeometrica` com métodos abstratos `calcularArea()` e `calcularPerimetro()`. Implemente em `Circulo`, `Retangulo`, `Triangulo`.
-
-### Nível Intermediário
-
-5. **Integração**: Crie um sistema de **biblioteca** integrando:
-   - Encapsulamento: proteger dados de livros e usuários
-   - Herança: `ItemBiblioteca` → `Livro`, `Revista`, `DVD`
-   - Polimorfismo: cálculo de multa diferente por tipo
-   - Abstração: interface `Emprestavel`
-
-6. **Sistema de Funcionários**: Desenvolva uma **folha de pagamento** com:
-   - Encapsulamento: dados dos funcionários protegidos
-   - Herança: `Funcionario` → `Mensalista`, `Horista`, `Comissionado`
-   - Polimorfismo: cálculo de salário diferente por tipo
-   - Abstração: classe abstrata com método `calcularSalario()`
-
-### Nível Avançado
-
-7. **E-commerce Completo**: Implemente um sistema com:
-   - Encapsulamento: produtos, carrinho, pedidos
-   - Herança: hierarquia de produtos (físicos, digitais, serviços)
-   - Polimorfismo: diferentes formas de entrega e pagamento
-   - Abstração: interfaces para `Pagavel`, `Entregavel`, `Descontavel`
-
-8. **Sistema de Transporte Urbano**:
-   - Encapsulamento: dados de veículos e passageiros
-   - Herança: `Veiculo` → `Onibus`, `Metro`, `Trem`
-   - Polimorfismo: cálculo de tarifa por tipo e distância
-   - Abstração: interface `Rastreavel`, classe abstrata `VeiculoPublico`
 
 ---
 
