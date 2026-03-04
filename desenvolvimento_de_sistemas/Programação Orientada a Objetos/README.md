@@ -7,10 +7,10 @@ Guia completo sobre os fundamentos da POO: Encapsulamento, Herança, Polimorfism
 ##  Índice
 
 - [Introdução à POO](#introdução-à-poo)
-- [1️⃣ Encapsulamento](#1️⃣-encapsulamento)
-- [2️⃣ Herança](#2️⃣-herança)
-- [3️⃣ Polimorfismo](#3️⃣-polimorfismo)
-- [4️⃣ Abstração](#4️⃣-abstração)
+- [1️ Encapsulamento](#1️-encapsulamento)
+- [2️ Herança](#2️-herança)
+- [3️ Polimorfismo](#3️-polimorfismo)
+- [4️ Abstração](#4️-abstração)
 - [Comparação Entre os Pilares](#comparação-entre-os-pilares)
 - [Exemplo Completo Integrando Todos os Pilares](#exemplo-completo-integrando-todos-os-pilares)
 - [Exercícios Práticos](#exercícios-práticos)
