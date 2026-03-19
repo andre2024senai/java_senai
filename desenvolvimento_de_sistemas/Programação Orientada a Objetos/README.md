@@ -1,7 +1,6 @@
 # Os 4 Pilares da Programação Orientada a Objetos em Java
 
 Guia completo sobre os fundamentos da POO: Encapsulamento, Herança, Polimorfismo e Abstração, com exemplos práticos e analogias do dia-a-dia.
-
 ---
 
 ##  Índice
@@ -692,15 +691,27 @@ public class Passaro extends Animal {
 // A MÁGICA DO POLIMORFISMO!
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== CADASTRO DE ANIMAIS ===");
+        System.out.print("Digite o nome do cachorro: ");
+        String nomeCachorro = scanner.nextLine();
+
+        System.out.print("Digite o nome do gato: ");
+        String nomeGato = scanner.nextLine();
+
+        System.out.print("Digite o nome do pássaro: ");
+        String nomePassaro = scanner.nextLine();
+
         // Todos são do tipo Animal, mas cada um se comporta diferente
-        Animal animal1 = new Cachorro("Rex");
-        Animal animal2 = new Gato("Mimi");
-        Animal animal3 = new Passaro("Piu");
+        Animal animal1 = new Cachorro(nomeCachorro);
+        Animal animal2 = new Gato(nomeGato);
+        Animal animal3 = new Passaro(nomePassaro);
         
         // Array polimórfico - mesma estrutura, comportamentos diferentes
         Animal[] animais = {animal1, animal2, animal3};
         
-        System.out.println("=== POLIMORFISMO EM AÇÃO ===\n");
+        System.out.println("\n=== POLIMORFISMO EM AÇÃO ===\n");
         
         // Mesmo código, resultados diferentes!
         for (Animal animal : animais) {
@@ -708,6 +719,8 @@ public class Main {
             animal.mover();     // Cada um se MOVE DIFERENTE
             System.out.println();
         }
+
+        scanner.close();
     }
 }
 
@@ -768,13 +781,35 @@ public class Calculadora {
 // Testando
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Calculadora calc = new Calculadora();
-        
-        System.out.println("Resultado: " + calc.somar(5, 3));              // 8
-        System.out.println("Resultado: " + calc.somar(5, 3, 2));           // 10
-        System.out.println("Resultado: " + calc.somar(5.5, 3.2));          // 8.7
-        System.out.println("Resultado: " + calc.somar(new int[]{1,2,3,4,5})); // 15
-        System.out.println("Resultado: " + calc.somar("Olá", "Mundo"));    // Olá Mundo
+
+        System.out.println("=== CALCULADORA COM SOBRECARGA ===");
+
+        System.out.print("Digite o 1º número inteiro: ");
+        int a = scanner.nextInt();
+        System.out.print("Digite o 2º número inteiro: ");
+        int b = scanner.nextInt();
+        System.out.println("Resultado (2 inteiros): " + calc.somar(a, b));
+
+        System.out.print("Digite o 3º número inteiro: ");
+        int c = scanner.nextInt();
+        System.out.println("Resultado (3 inteiros): " + calc.somar(a, b, c));
+
+        System.out.print("Digite o 1º número decimal: ");
+        double x = scanner.nextDouble();
+        System.out.print("Digite o 2º número decimal: ");
+        double y = scanner.nextDouble();
+        System.out.println("Resultado (2 doubles): " + calc.somar(x, y));
+
+        scanner.nextLine(); // limpar buffer
+        System.out.print("Digite a 1ª palavra: ");
+        String s1 = scanner.nextLine();
+        System.out.print("Digite a 2ª palavra: ");
+        String s2 = scanner.nextLine();
+        System.out.println("Resultado (strings): " + calc.somar(s1, s2));
+
+        scanner.close();
     }
 }
 ```
@@ -928,30 +963,66 @@ public class FolhaPagamento {
 // Testando o polimorfismo
 public class Main {
     public static void main(String[] args) {
-        // Criando funcionários de tipos diferentes
-        Gerente gerente = new Gerente("Ana Silva", "111.111.111-11", 8000.00, 3000.00);
-        Desenvolvedor dev1 = new Desenvolvedor("Carlos Santos", "222.222.222-22", 6000.00, "Java");
-        Desenvolvedor dev2 = new Desenvolvedor("Paula Costa", "333.333.333-33", 6500.00, "Python");
-        Vendedor vendedor = new Vendedor("Roberto Lima", "444.444.444-44", 3000.00, 5.0);
-        
-        // Registrando atividades
-        dev1.registrarHorasExtras(10);
-        dev2.registrarHorasExtras(5);
-        vendedor.registrarVenda(10000.00);
-        vendedor.registrarVenda(15000.00);
-        
-        // Sistema de folha
+        Scanner scanner = new Scanner(System.in);
         FolhaPagamento folha = new FolhaPagamento();
-        
+
+        System.out.println("=== CADASTRO DE FUNCIONÁRIOS ===\n");
+
+        // Gerente
+        System.out.println("--- Dados do Gerente ---");
+        System.out.print("Nome: ");
+        String nomeGerente = scanner.nextLine();
+        System.out.print("CPF: ");
+        String cpfGerente = scanner.nextLine();
+        System.out.print("Salário base: R$ ");
+        double salarioGerente = scanner.nextDouble();
+        System.out.print("Bônus: R$ ");
+        double bonus = scanner.nextDouble();
+        scanner.nextLine();
+        Gerente gerente = new Gerente(nomeGerente, cpfGerente, salarioGerente, bonus);
+
+        // Desenvolvedor 1
+        System.out.println("\n--- Dados do Desenvolvedor 1 ---");
+        System.out.print("Nome: ");
+        String nomeDev1 = scanner.nextLine();
+        System.out.print("CPF: ");
+        String cpfDev1 = scanner.nextLine();
+        System.out.print("Salário base: R$ ");
+        double salarioDev1 = scanner.nextDouble();
+        System.out.print("Horas extras: ");
+        int horasDev1 = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Linguagem: ");
+        String linguagemDev1 = scanner.nextLine();
+        Desenvolvedor dev1 = new Desenvolvedor(nomeDev1, cpfDev1, salarioDev1, linguagemDev1);
+        dev1.registrarHorasExtras(horasDev1);
+
+        // Vendedor
+        System.out.println("\n--- Dados do Vendedor ---");
+        System.out.print("Nome: ");
+        String nomeVendedor = scanner.nextLine();
+        System.out.print("CPF: ");
+        String cpfVendedor = scanner.nextLine();
+        System.out.print("Salário base: R$ ");
+        double salarioVendedor = scanner.nextDouble();
+        System.out.print("Percentual de comissão (%): ");
+        double comissao = scanner.nextDouble();
+        System.out.print("Total de vendas: R$ ");
+        double vendas = scanner.nextDouble();
+        scanner.nextLine();
+        Vendedor vendedor = new Vendedor(nomeVendedor, cpfVendedor, salarioVendedor, comissao);
+        vendedor.registrarVenda(vendas);
+
         // Adicionando todos (polimorfismo - todos são Funcionario)
         folha.adicionarFuncionario(gerente);
         folha.adicionarFuncionario(dev1);
-        folha.adicionarFuncionario(dev2);
         folha.adicionarFuncionario(vendedor);
-        
+
         // Processando (polimorfismo em ação!)
         folha.processarFolha();
         folha.exibirTodosFuncionarios();
+
+        scanner.close();
     }
 }
 ```
@@ -1876,5 +1947,3 @@ Simplifica e define contratos
 │  → Use ABSTRAÇÃO (abstract class / interface)  │
 └─────────────────────────────────────────────────┘
 ```
-
-
