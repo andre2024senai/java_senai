@@ -31,7 +31,7 @@ A **Programação Orientada a Objetos (POO)** é um paradigma de programação b
  
 ---
  
-## 1️⃣ Encapsulamento
+## 1️ Encapsulamento
  
 ### O que é?
  
