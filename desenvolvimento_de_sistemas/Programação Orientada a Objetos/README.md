@@ -11,7 +11,7 @@ Guia completo sobre os fundamentos da POO: Encapsulamento, Herança, Polimorfism
 - [2️ Herança](#2-heranca)
 - [3️ Polimorfismo](#3-polimorfismo)
 - [4️ Abstração](#4-abstracao)
-- [Comparação Entre os Pilares](#5-comparacao-entre-os-pilares)
+- [Comparação Entre os Pilares](#comparação-entre-os-pilares)
 - [Exemplo Completo Integrando Todos os Pilares](#exemplo-completo-integrando-todos-os-pilares)
  
 ---
@@ -1091,7 +1091,6 @@ Dirigir um carro:
  
 <a id="5-comparacao-entre-os-pilares"></a>
 ## Comparação Entre os Pilares
-## Comparação Entre os Pilares
  
 | Pilar | Foco | Pergunta Chave | Palavra-chave Java | Objetivo |
 |-------|------|----------------|-------------------|----------|
@@ -1118,8 +1117,9 @@ Dirigir um carro:
    ↓
    Aprende a criar contratos e simplificar complexidade
 ```
- 
+ <a id="exemplo-completo-integrando-todos-os-pilares"></a>
 ## Exemplo Completo Integrando Todos os Pilares
+
 ```java
 // 4. ABSTRAÇÃO: Classe abstrata definindo o contrato
 public abstract class Conta {
