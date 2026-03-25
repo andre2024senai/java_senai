@@ -1053,7 +1053,7 @@ Dirigir um carro:
  
 ### Formas de Abstração em Java
 
- ![abstracao1](https://github.com/user-attachments/assets/90602bb9-28ec-40f9-90ae-fbd58892666b)
+![abstracao1](https://github.com/user-attachments/assets/90602bb9-28ec-40f9-90ae-fbd58892666b)
  
 ![abstracao2](https://github.com/user-attachments/assets/0bdd9a47-94e7-419d-bec3-d4887985bbb5)
 
@@ -1085,7 +1085,6 @@ Dirigir um carro:
 - Classes não relacionadas precisam da mesma capacidade
 - Precisa de herança múltipla de comportamento
  
----
  
 ## Comparação Entre os Pilares
  
@@ -1114,8 +1113,6 @@ Dirigir um carro:
    ↓
    Aprende a criar contratos e simplificar complexidade
 ```
- 
----
  
 ## Exemplo Completo Integrando Todos os Pilares
 ```java
