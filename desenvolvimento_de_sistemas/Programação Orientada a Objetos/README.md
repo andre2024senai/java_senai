@@ -255,6 +255,7 @@ public class Main {
  
 ---
  
+<a id="2-heranca"></a>
 ## 2️⃣ Herança
  
 ### O que é?
@@ -603,6 +604,7 @@ public void exibir() {
  
 ---
  
+<a id="3-polimorfismo"></a>
 ## 3️⃣ Polimorfismo
  
 ### O que é?
