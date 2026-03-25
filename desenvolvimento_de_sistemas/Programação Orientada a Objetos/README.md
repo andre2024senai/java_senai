@@ -1089,7 +1089,6 @@ Dirigir um carro:
 - Classes não relacionadas precisam da mesma capacidade
 - Precisa de herança múltipla de comportamento
  
-<a id="5-comparacao-entre-os-pilares"></a>
 ## Comparação Entre os Pilares
  
 | Pilar | Foco | Pergunta Chave | Palavra-chave Java | Objetivo |
@@ -1117,7 +1116,6 @@ Dirigir um carro:
    ↓
    Aprende a criar contratos e simplificar complexidade
 ```
- <a id="exemplo-completo-integrando-todos-os-pilares"></a>
 ## Exemplo Completo Integrando Todos os Pilares
 
 ```java
