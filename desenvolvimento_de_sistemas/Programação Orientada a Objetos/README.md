@@ -11,7 +11,7 @@ Guia completo sobre os fundamentos da POO: Encapsulamento, Herança, Polimorfism
 - [2️ Herança](#2-heranca)
 - [3️ Polimorfismo](#3-polimorfismo)
 - [4️ Abstração](#4-abstracao)
-- [Comparação Entre os Pilares](#comparacao-entre-os-pilares)
+- [Comparação Entre os Pilares](#5-comparacao-entre-os-pilares)
 - [Exemplo Completo Integrando Todos os Pilares](#exemplo-completo-integrando-todos-os-pilares)
  
 ---
@@ -1066,7 +1066,7 @@ Dirigir um carro:
 ![abstracao4](https://github.com/user-attachments/assets/55df408b-55a6-4319-afe7-a38bb1e2a93b)
 
 ```
- 
+
 ### 🎯 Classes Abstratas vs Interfaces
  
 | Característica | Classe Abstrata | Interface |
@@ -1089,7 +1089,7 @@ Dirigir um carro:
 - Classes não relacionadas precisam da mesma capacidade
 - Precisa de herança múltipla de comportamento
  
- 
+  <a id="5-comparacao-entre-os-pilares"></a>
 ## Comparação Entre os Pilares
  
 | Pilar | Foco | Pergunta Chave | Palavra-chave Java | Objetivo |
